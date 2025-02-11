@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Body Styles */
+body {
+  @apply bg-background text-text;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-primary text-white py-2 px-4 rounded hover:bg-accent transition-colors duration-200;
+}
+
+/* Custom styles for romantic elements */
+.romantic-border {
+  border: 2px solid #f8bbd0;
+  border-radius: 0.5rem;
+}
+
+/* Optional: add a background pattern */
+body {
+  background-image: theme('backgroundImage.romantic-pattern');
+  background-repeat: repeat;
+  background-size: 100px;
+}
