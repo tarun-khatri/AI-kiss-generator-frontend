@@ -44,9 +44,9 @@ const VideoDisplay = ({ videoUrl }) => {
           </a>
         </div>
       ) : (
-        <p className="text-gray-600 text-center mt-4">
-          Your video will appear here after conversion.
-        </p>
+        <p className="text-gray-800 text-center mt-4 font-bold text-xl italic">
+        Your magical romantic moment will appear here... ✨
+      </p>
       )}
     </div>
   );

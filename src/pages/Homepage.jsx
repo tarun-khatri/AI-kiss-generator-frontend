@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import UploadSection from '../components/UploadSection';
 import VideoDisplay from '../components/VideoDisplay';
 import ContractAddress from '../components/ContractAddress';
+import BannerVideo from '../components/BannerVideo';
 
 const HomePage = () => {
   // State to hold the generated video URL from the backend response
@@ -18,15 +19,23 @@ const HomePage = () => {
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto px-4 py-8">
+       
+
         {/* Hero Section */}
-        <section className="text-center mb-12">
+        {/* <section className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-accent">Experience the Magic of a Kiss</h1>
           <p className="text-lg text-text">Upload the photo and let AI create a romantic kissing video that captures the essence of love.</p>
-        </section>
+        </section> */}
 
+        <section>
+          <BannerVideo/>
+        </section>
         <section>
           <ContractAddress address={contractAddress} /> 
         </section>
+
+
+
 
         {/* Upload Section */}
         <section>

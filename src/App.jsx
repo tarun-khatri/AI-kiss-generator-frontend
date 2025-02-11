@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/Homepage';
+import Roadmap from './pages/Roadmap';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         {/* The HomePage is rendered at the root URL */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/roadmap" element={<Roadmap />} />
         {/* Additional routes can be added here if needed in the future */}
       </Routes>
     </BrowserRouter>
