@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import UploadSection from '../components/UploadSection';
-import VideoDisplay from '../components/VideoDisplay';
 import ContractAddress from '../components/ContractAddress';
 import BannerVideo from '../components/BannerVideo';
 
@@ -30,22 +28,14 @@ const HomePage = () => {
         <section>
           <BannerVideo/>
         </section>
-        <section>
+
+        <section className="mb-8">
           <ContractAddress address={contractAddress} /> 
         </section>
 
 
 
 
-        {/* Upload Section */}
-        <section>
-          <UploadSection setVideoUrl={setVideoUrl} />
-        </section>
-
-        {/* Video Display Section */}
-        <section>
-          <VideoDisplay videoUrl={videoUrl} />
-        </section>
       </main>
 
       {/* Footer */}
